@@ -10,7 +10,7 @@ import NavBar from "@/components/NavBar";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col gap-20">
       <NavBar/>
       <Model3d/>
       <About/>

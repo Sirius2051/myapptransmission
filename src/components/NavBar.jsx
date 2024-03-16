@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-
+import 'animate.css';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,7 +15,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
               {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" /> */}
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Undefined Limits</span>
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white animate__animated animate__bounce">Undefined Limits</span>
             </a>
           </div>
           <div className="md:hidden">
@@ -41,7 +41,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
+        <div className= {`${isOpen ? 'block' : 'hidden'} md:hidden`} >
           <ul className="flex flex-col space-y-4">
             <li>
               <a href="#" className="block py-2 px-4 text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">Home</a>
