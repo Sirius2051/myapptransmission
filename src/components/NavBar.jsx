@@ -20,7 +20,7 @@ const Navbar = () => {
           </div>
           <div className="md:hidden">
             <button onClick={toggleNavbar} type="button" className="inline-flex items-center justify-center p-2 text-gray-500 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-              <span className="sr-only">Open main menu</span>
+              
               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
@@ -29,13 +29,13 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className="flex mr-10 gap-10 space-x-4">
               <li>
-                <a href="#" className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">Home</a>
+                <a href="#" className="text-black hover:bg-gradient-to-r  from-slate-900  to-slate-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 hover:text-white">Home</a>
               </li>
               <li>
-                <a href="#" className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">About</a>
+                <a href="#" className="text-black hover:bg-gradient-to-r from-slate-900  to-slate-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 hover:text-white">About</a>
               </li>
               <li>
-                <a href="#" className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">Team</a>
+                <a href="#" className="text-black hover:bg-gradient-to-r ffrom-slate-900  to-slate-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 hover:text-white">Team</a>
               </li>
 
             </ul>
