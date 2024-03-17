@@ -5,7 +5,7 @@ import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { useThree } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { Cylinder } from '@react-three/drei';
+import { Cylinder, Text } from '@react-three/drei';
 import { Sphere } from '@react-three/drei';
 // import { Bloom, EffectComposer, LUT } from '@react-three/postprocessing';
 // import { LUTCubeLoader } from 'postprocessing'
@@ -16,7 +16,7 @@ import { BufferGeometry, Float32BufferAttribute, PointsMaterial, Points } from '
 
 function Stars() {
   let positions = [];
-  
+
   for (let i = 0; i < 1000; i++) {
     let x = Math.random() * 800 - 400;
     let y = Math.random() * 800 - 400;
@@ -28,9 +28,9 @@ function Stars() {
   geometry.setAttribute('position', new Float32BufferAttribute(positions, 3));
 
   let material = new PointsMaterial({ color: 0xFFFFFF });
-  
+
   const pointsRef = useRef();
-  
+
   useFrame(() => {
     if (pointsRef.current) {
       pointsRef.current.rotation.y += 0.001;
@@ -41,31 +41,48 @@ function Stars() {
 }
 
 
-
-
 function Cylinders() {
+
+  const miLista = [
+    { id: 1, nombre: "Elemento 1", modelo: "modelo1.glb" },
+    { id: 2, nombre: "Elemento 2", modelo: "modelo2.glb" },
+    { id: 3, nombre: "Elemento 3", modelo: "modelo3.glb" },
+    { id: 4, nombre: "Elemento 4", modelo: "modelo3.glb" },
+    { id: 5, nombre: "Elemento 5", modelo: "modelo3.glb" },
+    { id: 6, nombre: "Elemento 6", modelo: "modelo3.glb" },
+    { id: 7, nombre: "Elemento 7", modelo: "modelo3.glb" },
+    { id: 8, nombre: "Elemento 8", modelo: "modelo3.glb" },
+    { id: 9, nombre: "Elemento 9", modelo: "modelo3.glb" },
+    { id: 10, nombre: "Elemento 10", modelo: "modelo3.glb" },
+  ];
+
   const cylinders = [];
   const [elapsedTime, setElapsedTime] = useState(0);
 
   useFrame(({ clock }) => setElapsedTime(clock.getElapsedTime()));
 
   for (let i = 0; i < 10; i++) {
+
+    const elementoSeleccionado = miLista[i];
+
     const x = i % 2 === 0 ? i * 10 : (i - 1) * 10;
-    const z = i % 2 === 0 ? 0 : 20; 
+    const z = i % 2 === 0 ? 0 : 20;
     cylinders.push(
       <group key={i} position={[x, 1, z]}>
-        
+
         <Cylinder args={[0.5, 0.5, 2, 32]}>
-          <MeshDistortMaterial attach="material" color={new THREE.Color("white")} 
-            transparent 
-            roughness={0} 
-            metalness={1} 
-            clearcoat={1} 
-            clearcoatRoughness={0} 
+          <MeshDistortMaterial attach="material" color={new THREE.Color("white")}
+            transparent
+            roughness={0}
+            metalness={1}
+            clearcoat={1}
+            clearcoatRoughness={0}
             reflectivity={1}
             envMapIntensity={2}
             speed={2} 
             factor={2} 
+            speed={2}
+            factor={2}
             distort={(Math.sin(elapsedTime) + 0.1) / 2}
             color={(Math.sin(elapsedTime * 0.1) + 1) / 2}
           />
@@ -74,9 +91,14 @@ function Cylinders() {
           <meshStandardMaterial attach="material" color={"#FFFFFF"} />
           <spotLight position={[0, 2.6, 0]} intensity={1} angle={0.15} penumbra={1} />
         </Sphere>
+        <Text position={[0.2, 5, 1]} color="white" anchorX="center" anchorY="middle" fontSize={1}>
+          {elementoSeleccionado.nombre}
+        </Text>
+
+
       </group>
     );
-    
+
   }
   return <>{cylinders}</>;
 }

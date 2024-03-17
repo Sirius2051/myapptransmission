@@ -1,8 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# CODICON 2024
 
-First, run the development server:
+![alt text](https://raw.githubusercontent.com/yel20/myapptransmission/master/public/Codicon.png?token=GHSAT0AAAAAACO7V5LSYSMQR6HE35RQ4GNIZPXJCJQ)
+
+Este software se desarrollo como parte de una competencia dell 15 al 17 de marzo, creada por la empresa [LEXPIN](https://lexpin.online/#/codicon)
+
+Palabra clave del Evento: TRANSMISION
+
+Tecnologías usadas: 
+
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+Primero clona este repositorio en tu entorno local con:
+
+```bash
+git clone https://github.com/yel20/myapptransmission.git
+```
+
+Una vez clonado, ingresa a la ruta del proyecto
+
+```bash
+cd myapptransmission
+```
+
+Instala las dependencias correspondientes con:
+
+```bash
+npm install
+```
+
+Para poder ver el proyecto en tu entorno local ejecuta:
 
 ```bash
 npm run dev
@@ -14,23 +41,11 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) En tu navagador para ver nuestro proyecto, en caso de que estes ejecutando otro proyecto en el puerto 3000, lo tipico seria usar el puerto 3001, 3002, progresivamente, revisa la salida de tu consola para verificar la ruta de acceso.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Autores
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [@yel20](https://github.com/yel20)
+- [@AztFireSpell](https://github.com/aztfirespell)
+- [@Sirius2051](https://github.com/Sirius2051)
+- [@RandoHomySer](https://github.com/RandoHomySer)
