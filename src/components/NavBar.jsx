@@ -29,28 +29,28 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className="flex mr-10 gap-10 space-x-4">
               <li>
-                <a href="#" className="text-black hover:bg-gradient-to-r  from-slate-900  to-slate-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 hover:text-white">Home</a>
+                <a href="#home" className="text-white hover:bg-gradient-to-r  from-slate-900  to-slate-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 hover:text-white">Home</a>
+              </li>
+              <li >
+                <a href="#about" className="text-white hover:bg-gradient-to-r from-slate-900  to-slate-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 hover:text-white">Sobre el Proyecto</a>
               </li>
               <li>
-                <a href="#" className="text-black hover:bg-gradient-to-r from-slate-900  to-slate-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 hover:text-white">About</a>
-              </li>
-              <li>
-                <a href="#" className="text-black hover:bg-gradient-to-r ffrom-slate-900  to-slate-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 hover:text-white">Team</a>
+                <a href="#team" className="text-white hover:bg-gradient-to-r from-slate-900  to-slate-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 hover:text-white">Equipo</a>
               </li>
 
             </ul>
           </div>
         </div>
         <div className= {`${isOpen ? 'block' : 'hidden'} md:hidden`} >
-          <ul className="flex flex-col space-y-4">
+          <ul className="flex flex-col space-y-4 ">
             <li>
-              <a href="#" className="block py-2 px-4 text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">Home</a>
+              <a href="#home" className="block py-2 px-4 text-white hover:text-blue-700 dark:text-white dark:hover:text-blue-500" >Home</a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-4 text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">About</a>
+              <a href="#about" className="block py-2 px-4 text-white hover:text-blue-700 dark:text-white dark:hover:text-blue-500">Sobre el Proyecto</a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-4 text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">Team</a>
+              <a href="#team" className="block py-2 px-4 text-white hover:text-blue-700 dark:text-white dark:hover:text-blue-500">Team</a>
             </li>
 
           </ul>

@@ -66,7 +66,7 @@ function Cylinders() {
             envMapIntensity={2}
             speed={2} 
             factor={2} 
-            distort={(Math.sin(elapsedTime) + 0.1) / 2} 
+            distort={(Math.sin(elapsedTime) + 0.1) / 2}
             color={(Math.sin(elapsedTime * 0.1) + 1) / 2}
           />
         </Cylinder>
@@ -104,7 +104,7 @@ function Model3d() {
   const prevCylinder = () => setCurrentCylinder((current) => (current - 1 + totalCylinders) % totalCylinders);
 
   return (
-    <div className='flex justify-center items-center h-screen relative'>
+    <div className='flex justify-center items-center h-screen relative' id="home">
       <button onClick={prevCylinder} className="absolute left-0 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full z-10 glow-on-hover ml-5">←</button>
       <Canvas className='h-2xl w-2xl'>
         <CameraController currentCylinder={currentCylinder} />

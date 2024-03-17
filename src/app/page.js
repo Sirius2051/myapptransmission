@@ -16,11 +16,12 @@ export default function Home() {
         <div className='wave -two'></div>
       </div>
       <span className="waves"></span>
-      <NavBar/>
-      <Model3d/>
-      <About/>
-      <AboutTeam/>
-      <Footer/>
+      <NavBar />
+      <Model3d />
+      <About  />
+
+      <AboutTeam />
+      <Footer />
     </div>
   );
 }
