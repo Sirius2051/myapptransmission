@@ -8,7 +8,7 @@ const Slider = () => {
     "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/800px-React.svg.png",
     "https://discoverthreejs.com/images/app-logos/forum.png",
     "https://repository-images.githubusercontent.com/2561582/2b93f700-a724-11ea-89af-e780fd85245b",
-    "https://spin.atomicobject.com/wp-content/uploads/gsap-logo.jpg",
+    // "https://spin.atomicobject.com/wp-content/uploads/gsap-logo.jpg",
     "https://bugfender.com/wp-content/uploads/2023/02/32.png",
     "https://th.bing.com/th/id/OIP._6ooq0R60ba3UT5c-QVemAHaDm?rs=1&pid=ImgDetMain",
   ];

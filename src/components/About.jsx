@@ -15,7 +15,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className="mt-8 lg:mt-0 lg:w-1/2 lg:pl-8 scroll-m-10 hover:cursor-pointer transition-all">
-                        <img className="rounded-lg shadow-md hover:animate__animate animate-pulse" src="https://via.placeholder.com/600x400" alt="Project" />
+                        <img className="rounded-lg shadow-md hover:animate__animate animate-pulse" src="https://media.istockphoto.com/id/1168442759/es/v%C3%ADdeo/4k-loopable-l%C3%ADneas-de-onda-abstractas.jpg?s=640x640&k=20&c=EU5xUd04XT9FDY9WOHdp5K5Uhvnx03zcOZs3ziEyzw4=" alt="Project" />
                     </div>
                 </div>
             </div>
