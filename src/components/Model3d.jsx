@@ -63,7 +63,7 @@ function Cylinders() {
 
   for (let i = 0; i < 10; i++) {
 
-    const elementoSeleccionado = miLista[i]; // Selecciona el primer elemento de la lista
+    const elementoSeleccionado = miLista[i];
 
     const x = i % 2 === 0 ? i * 10 : (i - 1) * 10;
     const z = i % 2 === 0 ? 0 : 20;
