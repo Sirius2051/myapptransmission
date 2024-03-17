@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Sora:wght@100..800&display=swap');
+
+* {
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .background-animate {
   background-size: 400%;
 
@@ -18,4 +27,187 @@
   50% {
     background-position: 100% 50%;
   }
+}
+/* body {
+  @apply bg-slate-400
+} */
+body {
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  transform: rotate(80deg); 
+  left: 0;
+  z-index: -1;
+}
+.wave {
+  position: absolute;
+  opacity: .4;
+  width: 1500px;
+  height: 1300px;
+  margin-left: -150px;
+  margin-top: -250px;
+  border-radius: 43%;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  from {transform: rotate(360deg);}
+}
+
+.wave.-one {
+  animation: rotate 10000ms infinite linear;
+  opacity: 1%;
+  background: white;
+}
+
+.wave.-two {
+  animation: rotate 6000ms infinite linear;
+  opacity: 2%;
+  background: white;
+}
+
+.waves {
+  width: 50vw;
+  height: 50vw;
+  display: inline-block;
+  position: fixed;
+  opacity: 20%;
+  right: -10%;
+  z-index: -1;
+}
+.waves::after,
+.waves::before {
+  content: '';  
+  box-sizing: border-box;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  border: 3.14px solid #FFF;
+  position: absolute;
+  right: 0;
+  top: 0;
+  animation: animwaves 2s linear infinite;
+}
+.waves::after {
+  animation-delay: 1s;
+}
+@keyframes animwaves {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.glow-on-hover {
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.glow-on-hover:before {
+  content: '';
+  background-color: #663dff;
+  background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  animation: glowing 20s linear infinite;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+  border-radius: 100%;
+}
+.glow-on-hover:active {
+  color: #000
+}
+.glow-on-hover:active:after {
+  background: transparent;
+}
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  left: 0;
+  top: 0;
+  border-radius: 100%;
+}
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  background-color: #130f40;
+  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 24px;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -3px;
+  margin: auto;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  border-radius: 24px;
+  background-color: #663dff;
+  background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background-color: #663dff;
+  background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+.card:hover::after {
+  filter: blur(30px);
+}
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.22) scaleY(0.84);
+  filter: blur(10px);
+}
+
+.navbar-glass {
+  background: rgba(0, 0, 0, 0.50);
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
 }

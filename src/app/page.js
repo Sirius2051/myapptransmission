@@ -10,8 +10,12 @@ import NavBar from "@/components/NavBar";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-20  w-full  bg-gradient-to-r from-slate-900  to-slate-700 via-gray-700
-    background-animate">
+    <div className="flex flex-col   w-full  ">
+      <div className='box'>
+        <div className='wave -one'> </div>
+        <div className='wave -two'></div>
+      </div>
+      <span className="waves"></span>
       <NavBar/>
       <Model3d/>
       <About/>
