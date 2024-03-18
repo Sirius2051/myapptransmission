@@ -72,7 +72,7 @@ function Cylinders() {
     { id: 9, nombre: "Elemento 9", descripcion: "", modelo: "/models/receptor.jpg" },
     { id: 10, nombre: "¿El Futuro?", descripcion: "...", modelo: "/models/4100098c8af8b04589771aa58935f4c8.jpg" },
   ];
-  const textures = miLista.map(elemento => useTexture(elemento.modelo));
+  // const textures = miLista.map(elemento => useTexture(elemento.modelo));
 
   const cylinders = [];
   const [elapsedTime, setElapsedTime] = useState(0);
@@ -95,7 +95,7 @@ function Cylinders() {
           <meshNormalMaterial attach="material" />
         </Cone>
         <Box position={[0, 3, 0]} args={[3, 3, 3]}>
-        <meshStandardMaterial attach="material" map={textures[i]} />
+{/*         <meshStandardMaterial attach="material" map={textures[i]} /> */}
         </Box>
         <Text position={[0.2, 6, 0]} color="white" anchorX="center" anchorY="middle" fontSize={1} rotation={[0, Math.PI / 2, 0]}>
           {elementoSeleccionado.nombre}
